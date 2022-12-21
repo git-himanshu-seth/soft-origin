@@ -1,9 +1,67 @@
-html,
-body {
+/* html, */
+/* body {
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
+} */
+
+@keyframes displaySO {
+ from{display: none; opacity:0, ; margin: -31px}
+ to{display: inline; opacity:1; margin:0}
+
+}
+@keyframes text1 {
+  0%   { left:35px; top:59px;}
+  100%  {left:35px; top:0px}
+}
+@keyframes text2 {
+  0%   { left:80px; top:-10px;}
+ 100%  { left:35px; top:0px;}
+}
+
+#so-text1{
+  position: relative;
+  animation-name: text1; 
+  animation-timing-function: linear;
+  /* animation-delay: 4s; */
+  animation-duration: 1s;
+  animation-fill-mode: forwards; 
+}
+#so-text2{
+  position: relative;
+  animation-name: text2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; 
+  animation-timing-function: linear;
+}
+.so-wrapper{
+height: 300px;
+width:300px;
+left:0;
+top:0;
+background-image: linear-gradient(to right,#9b55d8, #fa0574);
+border-radius: 50%;
+margin: 20% 36%;
+}
+.so-text-box{
+  width: 151px;
+  color: #fff;
+  text-align: initial;
+  font-size: 60px;
+  overflow: hidden;
+  padding: 25% 23%;
+}
+
+ .so-text-delay{
+  /* display: none;  */
+  margin: -31px;
+  left: 0;
+  opacity: 0;
+  animation-timing-function: linear;
+  animation-name: displaySO ;
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards; 
 }
 
 body {
@@ -14,7 +72,7 @@ body {
   background-color: #f0f0f0;
 }
 
-#root {
+/* #root {
   width: 100%;
   height: 100%;
 }
@@ -37,13 +95,14 @@ body {
   height: 80px;
   line-height: 80px;
   color: white;
+  width: 60px;
   font-size: 5em;
   font-weight: 800;
   text-transform: uppercase;
   will-change: transform, opacity;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .trails-text > div {
   overflow: hidden;
-}
+} */
